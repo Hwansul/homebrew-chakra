@@ -5,3 +5,8 @@
 brew tap mindulle/mindulle
 brew install <formulae_you_want>
 ```
+
+## 설치 확인하기
+```shell
+formulae_you_want --help
+```
