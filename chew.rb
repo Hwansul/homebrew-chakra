@@ -5,11 +5,11 @@
 class Chew < Formula
   desc ""
   homepage "https://github.com/Hwansul/chew"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
-    url "https://github.com/Hwansul/chew/releases/download/v0.2.0/chew_0.2.0_darwin_all.tar.gz"
-    sha256 "96c34ccb2075ce622886c64a49971f7bbd841341ab301902c9e3f8aa30c20da4"
+    url "https://github.com/Hwansul/chew/releases/download/v0.3.0/chew_0.3.0_darwin_all.tar.gz"
+    sha256 "fb0d83d1f1a8a9f0fdf5fa0cc6f0f8ee4d45a72ab434cae403445810e81c1757"
 
     def install
       bin.install "chew"
@@ -18,16 +18,16 @@ class Chew < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Hwansul/chew/releases/download/v0.2.0/chew_0.2.0_linux_arm64.tar.gz"
-      sha256 "f00a088adb8d23b77fd4c4bcc619ce166598fb944650095a6c60f021108a7b9e"
+      url "https://github.com/Hwansul/chew/releases/download/v0.3.0/chew_0.3.0_linux_arm64.tar.gz"
+      sha256 "a50104d42b0fb7770af8bbf064f5731c86e36872ee218d1b1fe092e0b27dede4"
 
       def install
         bin.install "chew"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Hwansul/chew/releases/download/v0.2.0/chew_0.2.0_linux_amd64.tar.gz"
-      sha256 "692082e8d8031dc001a0a811c0604c884ccac3f031baf9dfa3695d58d3c02e58"
+      url "https://github.com/Hwansul/chew/releases/download/v0.3.0/chew_0.3.0_linux_amd64.tar.gz"
+      sha256 "a8ba767330a9a9850aa4d6e06f65676071975e35f490c9ce64ff18785077bf3c"
 
       def install
         bin.install "chew"
