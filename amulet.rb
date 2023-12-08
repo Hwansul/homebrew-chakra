@@ -5,11 +5,11 @@
 class Amulet < Formula
   desc ""
   homepage "https://github.com/Hwansul/amulet"
-  version "0.4.15"
+  version "0.4.16"
 
   on_macos do
-    url "https://github.com/Hwansul/amulet/releases/download/v0.4.15/amulet_0.4.15_darwin_all.tar.gz"
-    sha256 "a7d5e620416555ddaa727543002f4f43aa0eea5fc5a72f8eddce818cda043f03"
+    url "https://github.com/Hwansul/amulet/releases/download/v0.4.16/amulet_0.4.16_darwin_all.tar.gz"
+    sha256 "84af12b9d4dce2640597fc79442ef4e94e311798b702ce404df35753fd59ab27"
 
     def install
       bin.install "amulet"
@@ -17,17 +17,17 @@ class Amulet < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/Hwansul/amulet/releases/download/v0.4.15/amulet_0.4.15_linux_amd64.tar.gz"
-      sha256 "c6d15a07f2975a0e68d666fc4e65d99a7ca182689c36ccdc6972236d57d1f990"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Hwansul/amulet/releases/download/v0.4.16/amulet_0.4.16_linux_arm64.tar.gz"
+      sha256 "7498c6ac4c26613a9442ebf6a6a461b88c2aa3c3eea4cfc9f6c91e5fd83ddb1a"
 
       def install
         bin.install "amulet"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Hwansul/amulet/releases/download/v0.4.15/amulet_0.4.15_linux_arm64.tar.gz"
-      sha256 "f316d2b88895ab41ceaaeab5493196ae95f8e3c0b38d300b5ec97d3d82b2c84c"
+    if Hardware::CPU.intel?
+      url "https://github.com/Hwansul/amulet/releases/download/v0.4.16/amulet_0.4.16_linux_amd64.tar.gz"
+      sha256 "e4841ccef7c37370b340aa1582a0a936f1ba50776ddf98b46d0c4bd3dc46018e"
 
       def install
         bin.install "amulet"
