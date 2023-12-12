@@ -1,8 +1,8 @@
-# homebrew-mindulle
+# homebrew-byeoru
 
-## mindulle의 brew formulae 사용하기
+## jipilmuk org의 byeoru brew formulae 사용하기
 ```shell
-brew tap hwansul/chakra
+brew tap jipilmuk/byeoru
 brew install <formulae_you_want>
 ```
 
