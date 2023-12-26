@@ -5,11 +5,11 @@
 class Byeoru < Formula
   desc ""
   homepage "https://github.com/hoehwa/byeoru"
-  version "0.1.0"
+  version "0.4.19"
 
   on_macos do
-    url "https://github.com/hoehwa/byeoru/releases/download/v0.1.0/byeoru_0.1.0_darwin_all.tar.gz"
-    sha256 "28a561134106110e4f137b1a545294925bfdf85cd1521c83d713c96b5961efbe"
+    url "https://github.com/hoehwa/byeoru/releases/download/v0.4.19/byeoru_0.4.19_darwin_all.tar.gz"
+    sha256 "8dc308cb6e7837767243e7be9280d8bea951245cbe7dc0e6b095bc17f9298457"
 
     def install
       bin.install "byeoru"
@@ -18,16 +18,16 @@ class Byeoru < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hoehwa/byeoru/releases/download/v0.1.0/byeoru_0.1.0_linux_arm64.tar.gz"
-      sha256 "52a9ef82a944daaf97995d4ee5166c9515da16d40238719d8d1cdad1f7560605"
+      url "https://github.com/hoehwa/byeoru/releases/download/v0.4.19/byeoru_0.4.19_linux_arm64.tar.gz"
+      sha256 "d259b71df29329f936ba82bd320edbb39a622a989202f59ce0e5c0f79a86dbea"
 
       def install
         bin.install "byeoru"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hoehwa/byeoru/releases/download/v0.1.0/byeoru_0.1.0_linux_amd64.tar.gz"
-      sha256 "fc2237113b6c529f7ab2c89eaf2f0deeace1610f9509be4b1bf8ac8ef7207541"
+      url "https://github.com/hoehwa/byeoru/releases/download/v0.4.19/byeoru_0.4.19_linux_amd64.tar.gz"
+      sha256 "f2a9dbc8614285451bb82dbe5724be80bff4da67506dae29a23be58acd0d89fb"
 
       def install
         bin.install "byeoru"
