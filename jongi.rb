@@ -5,11 +5,11 @@
 class Jongi < Formula
   desc ""
   homepage "https://github.com/hoehwa/jongi"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
-    url "https://github.com/hoehwa/jongi/releases/download/v0.1.0/jongi_0.1.0_darwin_all.tar.gz"
-    sha256 "5e8543b45213b60ffd97ca327bc27122ccbb688c5ab5735c95a85aab519c7ba5"
+    url "https://github.com/hoehwa/jongi/releases/download/v0.1.1/jongi_0.1.1_darwin_all.tar.gz"
+    sha256 "131b89214a3e6c2f0236747f578bb1af72e7aa18578bdb03ec1b5ccd733bb5c7"
 
     def install
       bin.install "jongi"
@@ -18,16 +18,16 @@ class Jongi < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hoehwa/jongi/releases/download/v0.1.0/jongi_0.1.0_linux_arm64.tar.gz"
-      sha256 "76483355ac27d4854b7cfc34884f62a91efc1349e52454dc6a8af37d489e37a4"
+      url "https://github.com/hoehwa/jongi/releases/download/v0.1.1/jongi_0.1.1_linux_arm64.tar.gz"
+      sha256 "c87b0332c53f0cf020a3453dc33ce4a6a61fc1ccc55005219013271432a324be"
 
       def install
         bin.install "jongi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hoehwa/jongi/releases/download/v0.1.0/jongi_0.1.0_linux_amd64.tar.gz"
-      sha256 "094ae7271e07d962e3067c198b75a37c3834cde146ac23aaf9ed012243593ac5"
+      url "https://github.com/hoehwa/jongi/releases/download/v0.1.1/jongi_0.1.1_linux_amd64.tar.gz"
+      sha256 "8e486df60f0496650dedccdf42dc30393cb79a0479e3b8c7b7f659df3e916b2c"
 
       def install
         bin.install "jongi"
