@@ -5,11 +5,11 @@
 class Meok < Formula
   desc ""
   homepage "https://github.com/hoehwa/meok"
-  version "0.4.20"
+  version "0.4.21"
 
   on_macos do
-    url "https://github.com/hoehwa/meok/releases/download/v0.4.20/meok_0.4.20_darwin_all.tar.gz"
-    sha256 "19edc4e1ece5e902ad110c763932ad6cf9bbff3fd51a681768226e8c15c62785"
+    url "https://github.com/hoehwa/meok/releases/download/v0.4.21/meok_0.4.21_darwin_all.tar.gz"
+    sha256 "a518c0b73efe69cba0bef897a4b3ae16e3b3aa11d49c41d2eff6901aaae81d8b"
 
     def install
       bin.install "meok"
@@ -18,16 +18,16 @@ class Meok < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hoehwa/meok/releases/download/v0.4.20/meok_0.4.20_linux_arm64.tar.gz"
-      sha256 "514fd2abf4f178f2452440b5466965c838bf17355e521c958fc31fc062c24183"
+      url "https://github.com/hoehwa/meok/releases/download/v0.4.21/meok_0.4.21_linux_arm64.tar.gz"
+      sha256 "6f7a7f3806f62c4b9b19bd5fc48142c6d195b109b29f8a6f0be17f3605ecdbea"
 
       def install
         bin.install "meok"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hoehwa/meok/releases/download/v0.4.20/meok_0.4.20_linux_amd64.tar.gz"
-      sha256 "b8b24c3f1ebcaf79f11e1c6f42a6a20e02febf58d770f95a29cedba83976a97c"
+      url "https://github.com/hoehwa/meok/releases/download/v0.4.21/meok_0.4.21_linux_amd64.tar.gz"
+      sha256 "35e64bf0c8c2c418cd1049165e3b795ff8d24ae6dcc20644824aad55f06ccb00"
 
       def install
         bin.install "meok"
