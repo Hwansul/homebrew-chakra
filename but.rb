@@ -5,11 +5,11 @@
 class But < Formula
   desc ""
   homepage "https://github.com/hoehwa/but"
-  version "0.2.4"
+  version "0.2.5"
 
   on_macos do
-    url "https://github.com/hoehwa/but/releases/download/v0.2.4/but_0.2.4_darwin_all.tar.gz"
-    sha256 "2cf6a67e5071e789c2c298e711e2f08c98f424da5925e1332f2dc38f0b960fb5"
+    url "https://github.com/hoehwa/but/releases/download/v0.2.5/but_0.2.5_darwin_all.tar.gz"
+    sha256 "fdedefe4efd441740d19725711925314914c6ec282fef1c98e74997fdf99025d"
 
     def install
       bin.install "but"
@@ -18,16 +18,16 @@ class But < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/hoehwa/but/releases/download/v0.2.4/but_0.2.4_linux_amd64.tar.gz"
-      sha256 "1c9ba7f680772de38c6370269880ad62ed87225db118ae69646863ffa2818fb8"
+      url "https://github.com/hoehwa/but/releases/download/v0.2.5/but_0.2.5_linux_amd64.tar.gz"
+      sha256 "7b796e05f285e257d5b24014aed15f8417322083456cab990b1c931f6644c5ac"
 
       def install
         bin.install "but"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hoehwa/but/releases/download/v0.2.4/but_0.2.4_linux_arm64.tar.gz"
-      sha256 "ee5ae07bff03d6b2dd68478964534b5f2e321ead7db99e7588c77f00f0c20e06"
+      url "https://github.com/hoehwa/but/releases/download/v0.2.5/but_0.2.5_linux_arm64.tar.gz"
+      sha256 "4687bf3db028ee02ac17acc366cc51c87d074710e6246ee7bc56367e0e758caf"
 
       def install
         bin.install "but"
